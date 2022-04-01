@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery Implementation</title>
+    <link rel="stylesheet" href="./style/main.css" />
+    <script src="./jQueryFiles/jquery-3.6.0.js"></script>
+    <script src="./jQueryFiles/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./style/jquery-ui.css" />
+    <script src="./jQueryFiles/jquery.validate.min.js"></script>
+    <script>
+      $(function () {
+        $("#datepicker").datepicker();
+      });
+      $(document).ready(function () {
+        $("#basic-form").validate();
+      });
+    </script>
+  </head>
+  <body>
+    <div class="form-input">
+      <form id="basic-form" action="" method="post">
+        <p>
+         Date<br>
+          <input type="text" id="datepicker" name="date" />
+        </p>
+        <p>
+          Name<br>
+          <input id="name" name="name" minlength="3" type="text" required />
+        </p>
+        <p>
+          E-Mail<br> 
+          <input id="email" type="email" name="email" required />
+        </p>
+        <p>
+          <input class="submit" type="submit" value="SUBMIT" />
+        </p>
+      </form>
+    </div>
+  </body>
+</html>

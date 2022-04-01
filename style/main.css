@@ -1,0 +1,71 @@
+body {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 1.25rem;
+  background-color: rgb(225, 226, 153);
+}
+
+.form-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+form,
+p {
+  margin: 20px;
+}
+
+p.note {
+  font-size: 1rem;
+  color: rgb(62, 128, 78);
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid rgb(167, 122, 185);
+  padding: 4px;
+  font-family: "Lato";
+  width: 300px;
+  margin-top: 10px;
+}
+
+label {
+  width: 300px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+label span {
+  font-size: 1rem;
+}
+
+label.error {
+  color: rgb(180, 89, 127);
+  font-size: 1rem;
+  display: block;
+  margin-top: 5px;
+}
+
+input.error {
+  border: 1px dashed rgb(197, 92, 188);
+  font-weight: 300;
+  color: rgb(216, 167, 62);
+}
+
+[type="submit"],
+[type="reset"],
+button,
+html [type="button"] {
+  margin-left: 0;
+  border-radius: 0;
+  background: rgb(93, 42, 173);
+  color: rgb(219, 200, 200);
+  border: none;
+  font-weight: 300;
+  padding: 10px 0;
+  line-height: 1;
+  margin: 10px auto;
+}
